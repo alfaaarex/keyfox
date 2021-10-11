@@ -36,13 +36,4 @@ And all the browser elements have been rearranged into a single bar so as to ded
 
 I've seen many people complaining about touch-first apps, since they require users to lift their hands off the keyboard and then use the touchpad or mouse, thereby.....making them suffer, I guess? But anyway, this theme has __NO CAPTION BUTTONS__.
 So, Min, Max, Close? Poof! Gone!
-Although you can still control the browser using the buttons on the toolbar, keystrokes are always available. Since I use macOS, I'm providing a list of such keystrokes.
-
-- Minimize: Command + M
-- Maximize: Command + Tab
-- Toggle Full Screen: Command + Control + F
-- Close Window: Shift + Command + W
-- New Window: Command + N
-- New Tab: Command + T
-- Close Tab: Command + W
-- Change Tabs: Command + <Tab No. for example, for Tab 1, Command + 1>
+Although you can still control the browser using the buttons on the toolbar, keystrokes are always available.
