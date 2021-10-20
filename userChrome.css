@@ -129,6 +129,7 @@ toolbar#nav-bar {
   background: rgba(var(--dark-color), 1) !important;
   box-shadow: none !important;
   padding-bottom: 4px !important;
+}
 
 /*================ DARK THEME ================*/
 :root:-moz-lwtheme-brighttext,
