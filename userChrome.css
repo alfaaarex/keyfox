@@ -3,10 +3,11 @@
 /*===COLORS===*/
 
 :root {
-  --accent-color: 0, 0, 0;
+  --accent-color: 45, 45, 45;
   --tab-color: 240, 240, 244;
-  --tab-text: 0, 0, 0;	
-  --secondary-accent-color: 0, 0, 0;
+  --tab-text-color: 255, 255, 255;
+  --secondary-accent-color: 127,127,127;
+  --second-tab-text-color: 127,127,127;
   --third-accent-color: 235, 219, 178;
   --light-color: 255, 255, 255;
   --dark-color: 0, 0, 0;
@@ -25,9 +26,9 @@
 
 
 :root {
-  --navbarWidth     : 540px; /* Set width of navbar. Use px for a fixed width 
+  --navbarWidth     : 40vw; /* Set width of navbar. Use px for a fixed width 
                                 or vw for a percentage of your window. */
-  --animationSpeed  : 0.15s;
+  --animationSpeed  : 0.5s;
 }
 
 
@@ -120,7 +121,7 @@
 
 #PersonalToolbar {
   background: rgba(var(--dark-color), 1) !important;
-  color: rgba(var(--dark-color), 1) !important;
+  color: rgba(var(--light-color), 1) !important;
   padding-bottom: 6px !important;
   padding-top: 1px !important;
 }
@@ -164,11 +165,11 @@ tab[selected="true"] .tab-background {
 
 .tabbrowser-tab:not([visuallyselected="true"]),
 .tabbrowser-tab:-moz-lwtheme {
-  color: rgba(var(--secondary-accent-color), 1) !important;
+  color: rgba(var(--second-tab-text-color), 1) !important;
 }
 
 tab[selected="true"] .tab-content {
-  color: rgba(var(--secondary-accent-color), 1) !important;
+  color: rgba(var(--tab-text-color), 1) !important;
 }
 
 tab[selected="true"] .tab-background {
@@ -188,4 +189,3 @@ tab[selected="true"] .tab-background {
 
 .tabbrowser-tab .tab-label  { color: var(--uc-inverted-colour) !important; }
 .tab-close-button { fill: var(--uc-inverted-colour) !important }
-
