@@ -114,8 +114,9 @@
 
 /*================== TABS BAR ==================*/
 
-#titlebar #TabsToolbar {
+.browser-toolbox-background {
   background: rgba(var(--dark-color), 1) !important;
+  will-change: initial; /* reset for performance */
 }
 
 
