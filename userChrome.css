@@ -106,9 +106,11 @@
   color       : transparent !important;
 }
 
-#urlbar:hover .urlbar-icon,
-#urlbar:active .urlbar-icon, 
-#urlbar[focused] .urlbar-icon {
+#urlbar:not(:hover,:active,[focused]) .urlbar-icon {
+  visibility: hidden;
+}
+
+#urlbar .urlbar-icon {
   fill        : var(--toolbar-color) !important;
 }
 
@@ -118,7 +120,6 @@
   background: rgba(var(--dark-color), 1) !important;
   will-change: initial; /* reset for performance */
 }
-
 
 #PersonalToolbar {
   background: rgba(var(--dark-color), 1) !important;
