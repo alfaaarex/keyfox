@@ -188,6 +188,3 @@ tab[selected="true"] .tab-background {
   transition: all 0.3s ease !important;
   border-radius: 4px !important;
 }
-
-.tabbrowser-tab .tab-label  { color: var(--uc-inverted-colour) !important; }
-.tab-close-button { fill: var(--uc-inverted-colour) !important }
