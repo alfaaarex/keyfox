@@ -149,12 +149,9 @@ tab[selected="true"] .tab-content {
 tab[selected="true"] .tab-background {
   background: rgba(var(--accent-color), 1) !important;
 }
-.tabbrowser-tab>.tab-stack>.tab-background:not([selected="true"]) {
-  transition: all 0.3s ease !important;
-}
 
-.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"]) {
-  background-color: rgba(var(--transparent-bgcolor), 0.7) !important;
+.tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background {
+  background-color: rgba(var(--accent-color), 0.7) !important;
 }
 
 .tab-line {
