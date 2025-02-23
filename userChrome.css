@@ -67,7 +67,9 @@
 #forward-button[disabled="true"] { display: none !important }
 
 /* Site information button */
-#identity-box { display: none !important }
+#identity-box > :not(#notification-popup-box) { display: none !important }
+#identity-box { margin: 0 !important }
+#notification-popup-box { margin-inline-end: var(--identity-box-margin-inline) }
 
 /* "Shield" icon */
 #tracking-protection-icon-container { display: none !important }
