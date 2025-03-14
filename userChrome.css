@@ -67,7 +67,9 @@
 #forward-button[disabled="true"] { display: none !important }
 
 /* Site information button */
-#identity-box { display: none !important }
+#identity-box > :not(#notification-popup-box) { display: none !important }
+#identity-box { margin: 0 !important }
+#notification-popup-box { margin-inline-end: var(--identity-box-margin-inline) }
 
 /* "Shield" icon */
 #tracking-protection-icon-container { display: none !important }
@@ -106,18 +108,20 @@
   color       : transparent !important;
 }
 
-#urlbar:hover .urlbar-icon,
-#urlbar:active .urlbar-icon, 
-#urlbar[focused] .urlbar-icon {
+#urlbar:not(:hover,:active,[focused]) .urlbar-icon {
+  visibility: hidden;
+}
+
+#urlbar .urlbar-icon {
   fill        : var(--toolbar-color) !important;
 }
 
 /*================== TABS BAR ==================*/
 
-#titlebar #TabsToolbar {
+.browser-toolbox-background {
   background: rgba(var(--dark-color), 1) !important;
+  will-change: initial; /* reset for performance */
 }
-
 
 #PersonalToolbar {
   background: rgba(var(--dark-color), 1) !important;
@@ -147,12 +151,9 @@ tab[selected="true"] .tab-content {
 tab[selected="true"] .tab-background {
   background: rgba(var(--accent-color), 1) !important;
 }
-.tabbrowser-tab>.tab-stack>.tab-background:not([selected="true"]) {
-  transition: all 0.3s ease !important;
-}
 
-.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"]) {
-  background-color: rgba(var(--transparent-bgcolor), 0.7) !important;
+.tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background {
+  background-color: rgba(var(--accent-color), 0.7) !important;
 }
 
 .tab-line {
@@ -186,6 +187,3 @@ tab[selected="true"] .tab-background {
   transition: all 0.3s ease !important;
   border-radius: 4px !important;
 }
-
-.tabbrowser-tab .tab-label  { color: var(--uc-inverted-colour) !important; }
-.tab-close-button { fill: var(--uc-inverted-colour) !important }
